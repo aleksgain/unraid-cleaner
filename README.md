@@ -152,5 +152,3 @@ MIT License - feel free to modify and distribute.
 ---
 
 **⚠️ Important**: Always run with `--dry-run` first to preview changes. The script will permanently delete files when run without this flag.
-
-**💡 Pro Tip**: The speed improvements are most dramatic with large files and organized libraries - perfect for typical Unraid media server setups! 
