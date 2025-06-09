@@ -93,7 +93,7 @@ Fast path-aware scan completed!
 ## Technical Performance Details
 
 ### Algorithm Efficiency
-| Traditional Approach | Our Fast Approach | Improvement |
+| Traditional Approach | Fast Approach | Improvement |
 |---------------------|-------------------|-------------|
 | Scan ALL files → Hash ALL files → Find duplicates | Scan paths → Hash only matches → Process immediately | **10-1000x faster** |
 | 1M files = 1M hash operations | 1M files → ~50 matching paths → 50 hash operations | **20,000x fewer operations** |
@@ -144,18 +144,6 @@ Fast path-aware scan completed!
 # Monthly cleanup
 ./move-cleanup-fast.sh >> monthly-cleanup.log
 ```
-
-### Technical Innovation
-- **Semantic file matching** before expensive hash operations
-- **Adaptive hashing** based on file characteristics
-- **Minimal I/O operations** for maximum throughput
-- **Memory-efficient processing** for large-scale operations
-
----
-
-## Contributing
-
-Found ways to make it even faster? Have suggestions for additional optimizations? Feel free to submit issues and enhancement requests!
 
 ## License
 
